@@ -47,6 +47,16 @@ class Project extends Component {
                                 <img src={require('../assets/images/' + project.websiteImg)} alt={project.title} className="website-img img-responsive" />
                             </div>
                         </div>
+                        <div className="project__mobile">
+                            <div className="project__toolbar">
+                                <div className="project__toolbar-address-bar">
+                                    <span>http://www.jetchy.co.uk/blog</span>
+                                </div>
+                            </div>
+                            <div className="project__mobile-screen">
+                                <img src={require('../assets/images/' + project.websiteImg)} alt={project.title} className="website-img img-responsive" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -105,12 +105,43 @@
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
         position: relative;
         top: -20px;
+        display: none;
+
+
+
+        @media #{$screen-min-lg} {
+            width: 90%;
+        }
 
         &-screen {
             border: 3px solid #e8e8e8;
             border-top: none;
         }
     }
+
+    &__mobile {
+        width: calc(100% - 30%);
+        margin: 0 auto;
+        position: relative;
+        top: -20px;
+
+        .project__toolbar-address-bar {
+            width: 100%;
+        }
+
+        &-screen {
+            border: 2px solid #e8e8e8;
+            border-top: none;
+            height: 280px;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+
 
     &__tags {
         list-style: none;
