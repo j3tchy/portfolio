@@ -29,16 +29,112 @@
         }
     }
 
-    &__images {
+    &__image {
         background-color: #b0dcee;
+        margin-top: 40px;
+
+        .container__wrapper {
+            overflow: visible;
+        }
     }
 
     &__summary {
-        padding: 42px 0 22px;
+        padding: 22px 0;
 
         @media #{$screen-min-lg} {
             width: calc(100% - 50%);
             margin: 0 auto;
+        }
+    }
+}
+
+.project {
+    &__toolbar {
+        background-color: #e8e8e8;
+        padding: 5px 10px;
+        overflow: hidden;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-options {
+            overflow: hidden;
+        }
+
+        &-circle {
+            border-radius: 50%;
+            background-color: red;
+            // float: left;
+            // display: block;
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            line-height: 32px;
+            display: inline-block;
+            vertical-align: middle;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            &--red {
+                background-color: #d95b6a;
+            }
+
+            &--yellow {
+                background-color: #e0d85e;
+            }
+
+            &--green {
+                background-color: #5bd98a;
+            }
+        }
+
+        &-address-bar {
+            align-content: flex-end;
+            // float: right;
+            background-color: #ffffff;
+            padding: 5px;
+            font-size: 0.7em;
+            width: 70%;
+        }
+    }
+
+    &__desktop {
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+        position: relative;
+        top: -20px;
+
+        &-screen {
+            border: 3px solid #e8e8e8;
+            border-top: none;
+        }
+    }
+
+    &__tags {
+        list-style: none;
+        padding-left: 0;
+        overflow: hidden;
+        margin-bottom: 0;
+
+        @media #{$screen-min-lg} {
+            width: calc(100% - 50%);
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__tag {
+        background-color: #f4f4f4;
+        padding: 3px 7px;
+        float: left;
+        margin: 0 5px;
+        color: #333333;
+        font-size: 0.9em;
+
+        &:first-child {
+            margin-left: 0;
         }
     }
 }

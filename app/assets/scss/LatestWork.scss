@@ -29,13 +29,18 @@
         }
 
         &-wrapper {
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             position: relative;
 
             @media #{$screen-min-sm} {
                 width: 49%;
                 float: left;
                 margin-right: 2%;
+                margin-bottom: 2%;
+            }
+
+            @media #{$screen-min-md} {
+
             }
 
             &:nth-child(2n+2) {

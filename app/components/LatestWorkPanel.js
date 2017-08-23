@@ -13,7 +13,7 @@ function LatestWorkPanel() {
                     return (
                         <div key={data.id} className="latestWork__image-wrapper">
                             <Link to={"/project/" + data.id}>
-                                <img className="lazy" src="http://placehold.it/960x500" className="latestWork__image img-responsive" />
+                                <img className="lazy" src={require('../assets/images/' + data.websiteImg)} className="latestWork__image img-responsive" />
                                 <div className="latestWork__image-title">
                                     {data.title}
                                 </div>

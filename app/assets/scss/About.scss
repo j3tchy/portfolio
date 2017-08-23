@@ -10,6 +10,15 @@
             float: left;
         }
 
+        h3 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 400;
+            font-size: 1.4em;
+            font-family: $header-font;
+            text-transform: uppercase;
+        }
+
         i {
             display: block;
             text-align: center;
