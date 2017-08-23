@@ -1,0 +1,57 @@
+/****************************
+    Latest Work
+****************************/
+
+.latestWork {
+    background-color: #f4f4f4;
+
+    &__intro {
+        @media #{$screen-min-sm} {
+            padding: 0 10%;
+        }
+    }
+
+    &__image {
+        &-title {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background-color: #f9f9f9;
+            padding: 5px;
+        }
+
+        &-panel {
+            margin-bottom: 75px;
+
+            @media #{$screen-min-md} {
+                padding-bottom: 50px;
+            }
+        }
+
+        &-wrapper {
+            margin-bottom: 10px;
+            position: relative;
+
+            @media #{$screen-min-sm} {
+                width: 49%;
+                float: left;
+                margin-right: 2%;
+            }
+
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
+
+            &:before {
+                @include cutout-corner(#f4f4f4);
+            }
+        }
+    }
+};
+
+/****************************
+    Padding
+****************************/
+.latestWork {
+    padding-top: 50px;
+}

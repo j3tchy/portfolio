@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Raleway');
+
+$fa-font-path: '~font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome.scss';
+
+$screen-min-sm: 'screen and (min-width: 768px)';
+$screen-min-md: 'screen and (min-width: 1024px)';
+$screen-min-lg: 'screen and (min-width: 1360px)';
+
+$header-font: 'Anton', sans-serif;
+$body-font: 'Raleway', sans-serif;
+
+$brand-color-1: #282b37;
+
+/****************************
+    Mixin
+****************************/
+@mixin cutout-corner($colour) {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-top: 40px solid transparent;
+    border-left: 40px solid $colour;
+
+    @media #{$screen-min-sm} {
+        border-width: 60px;
+    }
+}

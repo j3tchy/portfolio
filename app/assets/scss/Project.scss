@@ -1,0 +1,44 @@
+/****************************
+    Projects
+****************************/
+
+.projects {
+    margin-bottom: 50px;
+
+    &__header {
+        background-image: url('https://placehold.it/2400x500');
+        background-color: rgba(255, 255, 255, 0.8);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &.tripping {
+            background-image: url('../images/bbc-situ.jpg');
+        }
+
+        h1 {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 1);
+            padding: 10px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    &__images {
+        background-color: #b0dcee;
+    }
+
+    &__summary {
+        padding: 42px 0 22px;
+
+        @media #{$screen-min-lg} {
+            width: calc(100% - 50%);
+            margin: 0 auto;
+        }
+    }
+}
