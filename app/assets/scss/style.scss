@@ -26,7 +26,8 @@ h1, h2, h3 {
     padding: 0;
 }
 
-h1 {
+h1 ,
+.home__main-header{
     font-family: $header-font;
     line-height: 44px;
     text-transform: uppercase;
@@ -74,6 +75,7 @@ p {
         display: block;
         overflow: hidden;
         width: calc(100vw - 10%);
+        position: relative;
 
         @media #{$screen-min-sm} {
             width: calc(100vw - 25%);

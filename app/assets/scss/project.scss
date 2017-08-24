@@ -3,7 +3,7 @@
 ****************************/
 
 .projects {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 
     &__header {
         background-image: url('https://placehold.it/2400x500');
@@ -17,8 +17,8 @@
         justify-content: center;
         align-items: center;
 
-        &.tripping {
-            background-image: url('../images/bbc-situ.jpg');
+        &.npower-photo-challenge {
+            background-image: url('../images/npower-photo-challenge-hero.jpg');
         }
 
         h1 {
@@ -32,6 +32,11 @@
     &__image {
         background-color: #b0dcee;
         margin-top: 40px;
+
+        @media #{$screen-min-sm} {
+            position: relative;
+            padding-bottom: 30px;
+        }
 
         .container__wrapper {
             overflow: visible;
@@ -107,9 +112,8 @@
         top: -20px;
         display: none;
 
-
-
-        @media #{$screen-min-lg} {
+        @media #{$screen-min-sm} {
+            display: block;
             width: 90%;
         }
 
@@ -120,10 +124,19 @@
     }
 
     &__mobile {
-        width: calc(100% - 30%);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 230px;
         margin: 0 auto;
         position: relative;
         top: -20px;
+
+        @media #{$screen-min-sm} {
+            position: absolute;
+            right: 0;
+            z-index: 2;
+            top: 30px;
+            width: 200px;
+        }
 
         .project__toolbar-address-bar {
             width: 100%;
@@ -132,8 +145,12 @@
         &-screen {
             border: 2px solid #e8e8e8;
             border-top: none;
-            height: 280px;
+            height: 350px;
             overflow: hidden;
+
+            @media #{$screen-min-sm} {
+                height: 300px;
+            }
 
             img {
                 height: 100%;

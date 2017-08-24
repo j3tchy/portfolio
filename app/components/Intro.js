@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 import ScrollDown from './ScrollDown';
-import bigText from 'bigtext/src/bigtext';
+import bigtext from 'bigtext/src/bigtext';
 
 class Intro extends Component {
     componentDidMount() {
         console.log('<Intro />');
-        // $('.home__main-header').bigText();
+        // $('.home__main-header').bigtext();
     }
 
     render() {

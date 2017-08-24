@@ -49,6 +49,12 @@ module.exports = {
                         outputPath: 'fonts/'
                     }
                 }]
+            },{
+                test: require.resolve('bigtext/src/bigtext'),
+                use: [{
+                    loader: 'expose-loader',
+                    options: 'bigtext'
+                }]
             }
         ]
     },

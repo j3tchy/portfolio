@@ -40,21 +40,21 @@ class Project extends Component {
                                     <span className="project__toolbar-circle project__toolbar-circle--green"></span>
                                 </div>
                                 <div className="project__toolbar-address-bar">
-                                    <span>http://www.jetchy.co.uk/blog</span>
+                                    <span>{project.websiteAddress}</span>
                                 </div>
                             </div>
                             <div className="project__desktop-screen">
-                                <img src={require('../assets/images/' + project.websiteImg)} alt={project.title} className="website-img img-responsive" />
+                                <img src={require('../assets/images/' + project.websiteDesktop)} alt={project.title} className="website-img img-responsive" />
                             </div>
                         </div>
                         <div className="project__mobile">
                             <div className="project__toolbar">
                                 <div className="project__toolbar-address-bar">
-                                    <span>http://www.jetchy.co.uk/blog</span>
+                                    <span>{project.websiteAddress}</span>
                                 </div>
                             </div>
                             <div className="project__mobile-screen">
-                                <img src={require('../assets/images/' + project.websiteImg)} alt={project.title} className="website-img img-responsive" />
+                                <img src={require('../assets/images/' + project.websiteMobile)} alt={project.title} className="website-img img-responsive" />
                             </div>
                         </div>
                     </div>

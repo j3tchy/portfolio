@@ -16,10 +16,13 @@ const ProjectsAPI = {
             tags: ['css','html','javascript']
          },{
             id: 3,
-            title: 'Tripping',
+            title: 'npower Photo Challenge',
             summary: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which.',
-            websiteImg: 'bbc-situ.jpg',
-            slug: 'tripping',
+            websiteImg: 'npower-photo-challenge-hero.jpg',
+            websiteDesktop: 'npower-photo-challenge-desktop.png',
+            websiteMobile: 'npower-photo-challenge-mobile.png',
+            websiteAddress: 'http://www.npower.com/',
+            slug: 'npower-photo-challenge',
             tags: ['css','html','javascript']
          },{
             id: 4,
