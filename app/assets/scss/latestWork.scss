@@ -18,6 +18,10 @@
             right: 5px;
             background-color: #f9f9f9;
             padding: 5px;
+            font-family: $header-font;
+            text-transform: uppercase;
+            color: #333333;
+            font-size: 1.5em;
         }
 
         &-panel {
@@ -32,15 +36,18 @@
             margin-bottom: 30px;
             position: relative;
 
+            a:hover {
+                .latestWork__image-title {
+                    background-color: $brand-color-1;
+                    color: #f4f4f4;
+                }
+            }
+
             @media #{$screen-min-sm} {
                 width: 49%;
                 float: left;
                 margin-right: 2%;
                 margin-bottom: 2%;
-            }
-
-            @media #{$screen-min-md} {
-
             }
 
             &:nth-child(2n+2) {

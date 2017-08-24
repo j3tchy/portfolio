@@ -26,6 +26,11 @@
             background-color: rgba(255, 255, 255, 1);
             padding: 10px;
             box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+            width: calc(100% - 10%);
+
+            @media #{$screen-min-sm} {
+                width: auto;
+            }
         }
     }
 
@@ -117,6 +122,10 @@
             width: 90%;
         }
 
+        @media #{$screen-min-md} {
+            width: 70%;
+        }
+
         &-screen {
             border: 3px solid #e8e8e8;
             border-top: none;
@@ -134,8 +143,17 @@
             position: absolute;
             right: 0;
             z-index: 2;
-            top: 30px;
+            top: 50px;
             width: 200px;
+        }
+
+        @media #{$screen-min-md} {
+            right: 20px;
+            width: 240px;
+        }
+
+        @media #{$screen-min-lg} {
+            width: 340px;
         }
 
         .project__toolbar-address-bar {
@@ -145,11 +163,11 @@
         &-screen {
             border: 2px solid #e8e8e8;
             border-top: none;
-            height: 350px;
+            // height: 350px;
             overflow: hidden;
 
             @media #{$screen-min-sm} {
-                height: 300px;
+                // height: 300px;
             }
 
             img {
